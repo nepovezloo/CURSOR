@@ -1,24 +1,22 @@
-let numberN;
-let numberM;
+let numberN= String.trim;
+let numberM= String.trim;
 let pairedNumberConfirm;
-let sumOfNumbers =0;
+let sumOfNumbers = 0;
 
-do{
-numberN= +prompt('Пожалуйста, введите первое целое число');
-}
-while (!Number.isInteger(numberN) || numberN ===0);
+do {
+  numberN = +prompt('Пожалуйста, введите первое целое число');
+} while (!Number.isInteger(numberN) || numberN === 0);
 
-do{
-numberM= +prompt('Пожалуйста, введите второе целое число');
-}
-while(!Number.isInteger(numberM) || numberM ===0);
+do {
+  numberM = +prompt('Пожалуйста, введите второе целое число');
+} while (!Number.isInteger(numberM) || numberM === 0);
 
 pairedNumberConfirm= confirm('Пропускать парные числа?');
 
-for(let number= numberN; number <= numberM; number++){
-   if(pairedNumberConfirm && (number %2=== 0)){
-    continue;
+for (let number = numberN; number <= numberM; number++) {
+   if (pairedNumberConfirm && (number %2 === 0)) {
+    continue; 
    }
-   sumOfNumbers +=number;
+   sumOfNumbers += number;
 }
 alert(`Сумма : ${sumOfNumbers}`);
