@@ -75,6 +75,6 @@ const deleteLetters= (letter, word) => {
   Функція №4 : ${changeWithTax(1234)}
   Функція №5 : ${randomNumber(1, 10)}
   Функція №6 : ${countLetter('а', 'Асталавіста')}
-  Функція №7 : ${convertCurrency('1000 uAH')}
+  Функція №7 : ${convertCurrency('1000 UAH')}
   Функція №8 : ${randomPassword(5)}
   Функція №9 : ${deleteLetters('a', 'blablabla')}`)
