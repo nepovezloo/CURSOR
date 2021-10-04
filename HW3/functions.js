@@ -33,7 +33,7 @@ const countLetter= (letter, word) => {
     const newWord = word.toLowerCase();
     let result = 0;
       for(let i = 0; i < word.length; i++){
-          if(word[i] === letter){
+          if(newWord[i] === letter){
             result ++ ;
           }
       }
@@ -60,7 +60,7 @@ const randomPassword= (number = 8) => {
 }
 //9
 const deleteLetters= (letter, word) => {
-  result = ""
+  let result = ""
   for(i = 0; i < word.length; i++) {
     if (word[i] === letter) {
       continue;
