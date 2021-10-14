@@ -2,7 +2,7 @@
 getRandomArray = (length, min, max) => {
     let result = [];
     for(i = 0; i < length; i++) {
-        let randomNumbers = Math.floor(Math.random() * (max - min + 1) + min);
+        let randomNumber = Math.floor(Math.random() * (max - min + 1) + min);
         result[i] = randomNumbers;
     }
     return result;
@@ -29,7 +29,7 @@ countPositiveNumbers = (...numbers) => numbers.filter(number => number > 0);
 console.log(countPositiveNumbers(1, 5, -1, -7, 4, -3, 2, 8, -9))
 
 // #7
-getDivideByFive = (...numbers) => numbers.filter(number => number %5 === 0);
+getDivideByFive = (...numbers) => numbers.filter(number => number % 5 === 0);
 
 console.log(getDivideByFive(1, 3, 76, 35, 27, 25, 10, 5, 93, 86, 55))
 
@@ -38,7 +38,7 @@ divideByThree = (word) => {
     let result = [];
     const lowerWord = word.toLowerCase();
     for(i = 0; i < lowerWord.length; i += 3) {
-        let partOfWord = lowerWord.slice(i, i + 3)
+        const partOfWord = lowerWord.slice(i, i + 3)
         result.push(partOfWord)
     }
     return result;
