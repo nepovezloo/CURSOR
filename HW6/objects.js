@@ -61,4 +61,10 @@ calculateWordLetters = (word) => {
   wordToLowerCase.map(letter => !result[letter] ? result[letter] = 1 : result[letter]++)
   return result
 }
-console.log(calculateWordLetters('тест'))
+
+console.log(getSubjects(students[0]));
+console.log(getAvarageMark(students[0]));
+console.log(getStudentInfo(students[0]));
+console.log(getStudentsNames(students));
+console.log(getBestStudents(students));
+console.log(calculateWordLetters('тест'));
