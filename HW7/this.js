@@ -24,6 +24,7 @@ const getMySalary =
 console.log(getMyTaxes.call(ukraine, 1007));
 console.log(getMiddleTaxes.call(litva));
 console.log(getTotalTaxes.call(latvia));
-setInterval(() => {
+let Interval = setInterval(() => {
     getMySalary.call(ukraine);
 }, 10000); 
+setTimeout(() => { clearInterval(Interval)}, 30000);
