@@ -14,13 +14,16 @@ const getTotalTaxes = function () {
     return  this.tax * this.middleSalary * this.vacancies;
 }
 
-const getMySalary = function () {
+const getMySalary = 
+    function () {
     const salary = Math.floor(Math.random() * (2000 - 1500) + 1500);
     const taxes = Math.floor(this.tax * salary);
     const profit = salary - taxes;
     return console.log(`salary: ${salary}, taxes: ${taxes}, profit: ${profit}`)
-}
+    }
 console.log(getMyTaxes.call(ukraine, 1007));
 console.log(getMiddleTaxes.call(litva));
 console.log(getTotalTaxes.call(latvia));
-getMySalary.call(ukraine);
+setInterval(() => {
+    getMySalary.call(ukraine);
+}, 10000); 
