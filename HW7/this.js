@@ -19,12 +19,12 @@ const getMySalary =
     const salary = Math.floor(Math.random() * (2000 - 1500) + 1500);
     const taxes = Math.floor(this.tax * salary);
     const profit = salary - taxes;
-    return console.log(`salary: ${salary}, taxes: ${taxes}, profit: ${profit}`)
+    result = console.log({Salary: salary, Taxes: taxes, Profit: profit})
     }
 console.log(getMyTaxes.call(ukraine, 1007));
 console.log(getMiddleTaxes.call(litva));
 console.log(getTotalTaxes.call(latvia));
-let Interval = setInterval(() => {
+let interval = setInterval(() => {
     getMySalary.call(ukraine);
 }, 10000); 
-setTimeout(() => { clearInterval(Interval)}, 30000);
+setTimeout(() => { clearInterval(interval)}, 30000);
