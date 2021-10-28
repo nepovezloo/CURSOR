@@ -1,6 +1,7 @@
 const bigCube = document.createElement('div');
 bigCube.className = 'container';
 document.body.append(bigCube);
+
 const generateBlocks = () => {
 
     function randomSmallCubeColor() {
@@ -8,21 +9,22 @@ const generateBlocks = () => {
         return 'rgb(' + randomColor() + ',' + randomColor() + ',' + randomColor() + ')';
     }
 
-  for (let i = 0; i < 5; i++) {
-      for (let b = 0; b < 5; b++){
+  for (let h = 0; h < 5; h++) {
+      for (let w = 0; w < 5; w++){
     const smallCube = document.createElement('div');
     smallCube.classList.add('box');
     smallCube.style.backgroundColor = randomSmallCubeColor();
     bigCube.append(smallCube);
   }
-}
+ }
 }
 generateBlocks();
 
 //Advanced 
 const generateBlocksInterval = () => {
-  setInterval(()=> {
-    bigCube.innerHTML
-  },1000)
-}
-generateBlocksInterval();
+    setInterval(()=> {
+      bigCube.innerHTML = '' 
+        generateBlocks()
+    },1000)
+  }
+  generateBlocksInterval();
