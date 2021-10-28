@@ -7,7 +7,7 @@ class Student {
      this.dismis = [];
  }
    getInfo() {
-       return this.university + this.course + this.fullName;
+       return `Університет: ${this.university}, Курс: ${this.course}, Повне ім*я: ${this.fullName}`;
  }
    get getMarks() {
     return this.marks;
