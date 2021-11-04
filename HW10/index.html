@@ -4,42 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="keys">
-        <div data-key = "65" class="key"></div>
-        <kbd>A</kbd>
-        <span class="sound"></span>
-        <div data-key = "68" class="key"></div>
-        <kbd>S</kbd>
-        <span class="sound"></span>
-        <div data-key = "70" class="key"></div>
-        <kbd>D</kbd>
-        <span class="sound"></span>
-        <div data-key = "71" class="key"></div>
-        <kbd>F</kbd>
-        <span class="sound"></span>
-        <div data-key = "72" class="key"></div>
-        <kbd>G</kbd>
-        <span class="sound"></span>
-        <div data-key = "74" class="key"></div>
-        <kbd>H</kbd>
-        <span class="sound"></span>
-        <div data-key = "75" class="key"></div>
-        <kbd>J</kbd>
-        <span class="sound"></span>
-        <div data-key= "76" class="key"></div>
-        <kbd>K</kbd>
-        <span class="sound"></span></div>
+        <div data-key = "65" class="key">
+         <kbd>A</kbd>
+         <span class="sound">До</span>
+        </div>
+        <div data-key = "83" class="key">
+         <kbd>S</kbd>
+         <span class="sound">Ре</span>
+        </div>
+        <div data-key = "68" class="key">
+         <kbd>D</kbd>
+         <span class="sound">Ми</span>
+        </div>
+        <div data-key = "70" class="key">
+         <kbd>F</kbd>
+         <span class="sound">Фа</span>
+        </div>
+        <div data-key = "71" class="key">
+         <kbd>G</kbd>
+         <span class="sound">Соль</span>
+        </div>
+        <div data-key = "72" class="key">
+         <kbd>H</kbd>
+         <span class="sound">Ля</span>
+        </div>
+        <div data-key = "74" class="key">
+         <kbd>J</kbd>
+         <span class="sound">Си</span>
+        </div>
+        <div data-key= "75" class="key">
+         <kbd>K</kbd>
+         <span class="sound">Dr. Dre - Still Dre</span>
+        </div>
+    </div>
 
-        <audio data-key="65" src="" ></audio>
-        <audio data-key="68" src="" ></audio>
-        <audio data-key="70" src="" ></audio>
-        <audio data-key="71" src="" ></audio>
-        <audio data-key="72" src="" ></audio>
-        <audio data-key="74" src="" ></audio>
-        <audio data-key="75" src="" ></audio>
-        <audio data-key="76" src="" ></audio>
+        <audio data-key="65" src="music/nota-do.mp3" ></audio>
+        <audio data-key="83" src="music/re.mp3" ></audio>
+        <audio data-key="68" src="music/mi.mp3" ></audio>
+        <audio data-key="70" src="music/nota-fa.mp3" ></audio>
+        <audio data-key="71" src="music/sol.mp3" ></audio>
+        <audio data-key="72" src="music/l'a.mp3" ></audio>
+        <audio data-key="74" src="music/si.mp3" ></audio>
+        <audio data-key="75" src="music/Dr. Dre feat Snoop Dogg - Still D.R.E. .mp3" ></audio>
+
+        <script src="events.js"></script>
 </body>
 </html>
