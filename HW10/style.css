@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* body:before {
+    
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+} */
+
+body {
+    background: url(image/self-playing-piano.jpg);
+    text-align: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.key {
+    border: 2px solid black;
+    background: rgba(3, 21, 32, 0.3);
+    border-radius: 5px ;
+    font-family: Arial;
+    padding-top: 5px;
+    margin: 5px;
+    height: 70px;
+    width: 70px;
+    color: palegoldenrod;
+    transition: all 0.10s;
+}
+
+.playing {
+    transform: scale(1.1);
+    border: 3px solid plum;
+    box-shadow: 0, 0, 45px white;
+}
+
+kbd {
+    display: block;
+    font-size: 20px;
+    padding-top: 6px;
+}
+
+span {
+    padding-top: 3px;
+}
+
+.keys {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15em;
+}
