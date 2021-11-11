@@ -10,12 +10,24 @@ console.log(idGenerator.next().value);
 console.log(idGenerator.next().value);
 console.log(idGenerator.next().value);
 
-//advanced
-// function* newFontGenerator () {
-//     let start = 14;
-//     if(true) {
-//         yield start +=2;
-//     } else(false) {
-//         yield start -=2;
-//     }
-// }
+// advanced
+function* newFontGenerator (size) {
+    let action = yield size;
+    while(true) {
+        if(action === "up") {
+            size += 2
+        } else if (action === "down") {
+            size -= 2
+        }
+    }
+}
+
+const fontGenerator = newFontGenerator(14)
+console.log(fontGenerator.next("up").value);
+console.log(fontGenerator.next("up").value);
+console.log(fontGenerator.next("up").value);
+console.log(fontGenerator.next().value);
+console.log(fontGenerator.next("down").value);
+console.log(fontGenerator.next("down").value);
+console.log(fontGenerator.next("down").value);
+console.log(fontGenerator.next().value);
