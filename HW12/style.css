@@ -1,0 +1,30 @@
+#next {
+    display: none;
+}
+
+h2 {
+    display: none;
+}
+
+body {
+    margin: 10px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: burlywood;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+div {
+    margin-right: 20px;
+    align-items: flex-start;
+    background-color: rgb(230, 178, 120) ;
+    block-size: fit-content;
+    border-radius: 2px;
+}
