@@ -23,9 +23,9 @@ const getCharacters = () => {
              .get(`${char}`)
              .then((inf) => {
                character += 
-                `<div><h2 class="name">${inf.data.name}</h2> 
-                <div class="birth">${inf.data.birth_year}</div> 
-                <div class="gender">${inf.data.gender}</div></div>`
+                `<div><h2>${inf.data.name}</h2> 
+                <div>${inf.data.birth_year}</div> 
+                <div>${inf.data.gender}</div></div>`
                 characters.innerHTML = character;
                 
                 }
@@ -45,7 +45,7 @@ const getPlanets = () => {
    axios
       .get(`${baseUrl}/planets/?page=${currentPage}`)
       .then(response => {
-         const planetss = response.data.results.map(planet => `<div class="planets__item">${planet.name}</div>`)
+         const planetss = response.data.results.map(planet => `<div>${planet.name}</div>`)
            planets.innerHTML = planetss.join('');
          });
 }
